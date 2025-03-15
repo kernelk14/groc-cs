@@ -40,6 +40,9 @@ namespace Grocery {
         public static void Update(Dictionary<string, int> l, string name, int quan) {
             l[name] = quan;
         }
+        public static void Rem(Dictionary<string, int> l, string name) {
+            l.Remove(name);
+        }
 
         public static void AddCategory() {
             Console.WriteLine("Choose a category below:");
@@ -211,7 +214,6 @@ namespace Grocery {
             } else {
                 Rainbow.Error("Invalid Choice");
             }
-
         }
         
         public static void RemCategory() {
@@ -225,7 +227,83 @@ namespace Grocery {
             int choice = Inputs.GetInt("Choice: ");
             Console.ResetColor();
 
-    
+            if (choice == 1) { // FOOD
+                if (food.Count <= 0) {
+                    Console.WriteLine("No Items.");
+                } else {
+                    Console.WriteLine("Foods:");
+                    int ctr = 1;
+                    foreach(var (item, value) in food) {
+                        Console.WriteLine($"{ctr}. {item} - {value}");
+                        ctr += 1;
+                    }
+                    int x = Inputs.GetInt("Remove Item: ") - 1;
+                    string n = food.ElementAt(x).Key;
+                    /*string n = Inputs.GetString("Type the item you want to update: ");*/
+                    if (food.ContainsKey(n)) {
+                        Rem(food, n);
+                    } else {
+                        Rainbow.Error($"There is no such {n} inside Foods.");
+                    }
+                }
+            } else if (choice == 2) {
+                if (drinks.Count <= 0) {
+                    Console.WriteLine("No Items.");
+                } else {
+                    Console.WriteLine("Drinks:");
+                    int ctr = 1;
+                    foreach(var (item, value) in drinks) {
+                        Console.WriteLine($"{ctr}. {item} - {value}");
+                        ctr += 1;
+                    }
+                    int x = Inputs.GetInt("Remove Item: ") - 1;
+                    string n = drinks.ElementAt(x).Key;
+                    /*string n = Inputs.GetString("Type the item you want to update: ");*/
+                    if (drinks.ContainsKey(n)) {
+                        Rem(drinks, n);
+                    } else {
+                        Rainbow.Error($"There is no such {n} inside Drinks.");
+                    }
+                }
+            } else if (choice == 3) {
+                if (frozen.Count <= 0) {
+                    Console.WriteLine("No Items.");
+                } else {
+                    Console.WriteLine("Frozen Goods:");
+                    int ctr = 1;
+                    foreach(var (item, value) in frozen) {
+                        Console.WriteLine($"{ctr}. {item} - {value}");
+                        ctr += 1;
+                    }
+                    int x = Inputs.GetInt("Remove Item: ") - 1;
+                    string n = frozen.ElementAt(x).Key;
+                    /*string n = Inputs.GetString("Type the item you want to update: ");*/
+                    if (frozen.ContainsKey(n)) {
+                        Rem(frozen, n);
+                    } else {
+                        Rainbow.Error($"There is no such {n} inside Frozen Goods.");
+                    }
+                }
+            } else if (choice == 4) {
+                if (fruits_and_veg.Count <= 0) {
+                    Console.WriteLine("No Items.");
+                } else {
+                    Console.WriteLine("Fruits and Vegetables:");
+                    int ctr = 1;
+                    foreach(var (item, value) in fruits_and_veg) {
+                        Console.WriteLine($"{ctr}. {item} - {value}");
+                        ctr += 1;
+                    }
+                    int x = Inputs.GetInt("Remove Item: ") - 1;
+                    string n = fruits_and_veg.ElementAt(x).Key;
+                    /*string n = Inputs.GetString("Type the item you want to update: ");*/
+                    if (fruits_and_veg.ContainsKey(n)) {
+                        Rem(drinks, n);
+                    } else {
+                        Rainbow.Error($"There is no such {n} inside Fruits and Vegetables.");
+                    }
+                }
+            }
         }
         
         public static void ViewCategory() {
@@ -239,7 +317,53 @@ namespace Grocery {
             int choice = Inputs.GetInt("Choice: ");
             Console.ResetColor();
 
-    
+            if (choice == 1) { // FOOD
+                if (food.Count <= 0) {
+                    Console.WriteLine("No Items.");
+                } else {
+                    Console.WriteLine("Foods:");
+                    int ctr = 1;
+                    foreach(var (item, value) in food) {
+                        Console.WriteLine($"{ctr}. {item} - {value}");
+                        ctr += 1;
+                    }
+                }
+            } else if (choice == 2) {
+                if (drinks.Count <= 0) {
+                    Console.WriteLine("No Items.");
+                } else {
+                    Console.WriteLine("Drinks:");
+                    int ctr = 1;
+                    foreach(var (item, value) in drinks) {
+                        Console.WriteLine($"{ctr}. {item} - {value}");
+                        ctr += 1;
+                    }
+                }
+            } else if (choice == 3) { 
+                if (frozen.Count <= 0) {
+                    Console.WriteLine("No Items.");
+                } else {
+                    Console.WriteLine("Frozen Goods:");
+                    int ctr = 1;
+                    foreach(var (item, value) in frozen) {
+                        Console.WriteLine($"{ctr}. {item} - {value}");
+                        ctr += 1;
+                    }
+                }
+            } else if (choice == 4) {
+                if (fruits_and_veg.Count <= 0) {
+                    Console.WriteLine("No Items.");
+                } else {
+                    Console.WriteLine("Fruits and Vegetables:");
+                    int ctr = 1;
+                    foreach(var (item, value) in fruits_and_veg) {
+                        Console.WriteLine($"{ctr}. {item} - {value}");
+                        ctr += 1;
+                    }
+                }
+            } else {
+                Rainbow.Error("Invalid Choice");
+            }
         }
 
         public static void Main(string[] args) {

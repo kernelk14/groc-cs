@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("groc-cs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c38130ed469612db6216ed0a3155b90d38bf4ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c132271497a183977b50e2362df56d7775b7989")]
 [assembly: System.Reflection.AssemblyProductAttribute("groc-cs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("groc-cs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
