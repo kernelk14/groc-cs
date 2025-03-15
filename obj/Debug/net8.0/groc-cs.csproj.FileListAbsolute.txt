@@ -12,3 +12,4 @@
 /home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.pdb
 /home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.genruntimeconfig.cache
 /home/khyle/Codes/groc-cs/obj/Debug/net8.0/ref/groc-cs.dll
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.sourcelink.json
