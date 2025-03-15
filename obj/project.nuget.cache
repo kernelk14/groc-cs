@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zO4GbjqUhjhVdeNrjvI0eepN3z0nxaxPs3D03uQDTqgGX0ff5/qFi5EYmKz1SSqUjcNDczYAP+BiMyo6CkEqow==",
+  "success": true,
+  "projectFilePath": "/home/khyle/Codes/groc-cs/groc-cs.csproj",
+  "expectedPackageFiles": [
+    "/home/khyle/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}

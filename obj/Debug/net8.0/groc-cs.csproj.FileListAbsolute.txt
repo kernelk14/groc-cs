@@ -1,0 +1,14 @@
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.GeneratedMSBuildEditorConfig.editorconfig
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.AssemblyInfoInputs.cache
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.AssemblyInfo.cs
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.csproj.CoreCompileInputs.cache
+/home/khyle/Codes/groc-cs/bin/Debug/net8.0/groc-cs
+/home/khyle/Codes/groc-cs/bin/Debug/net8.0/groc-cs.deps.json
+/home/khyle/Codes/groc-cs/bin/Debug/net8.0/groc-cs.runtimeconfig.json
+/home/khyle/Codes/groc-cs/bin/Debug/net8.0/groc-cs.dll
+/home/khyle/Codes/groc-cs/bin/Debug/net8.0/groc-cs.pdb
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.dll
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/refint/groc-cs.dll
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.pdb
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/groc-cs.genruntimeconfig.cache
+/home/khyle/Codes/groc-cs/obj/Debug/net8.0/ref/groc-cs.dll
